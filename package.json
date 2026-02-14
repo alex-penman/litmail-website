@@ -1,0 +1,37 @@
+{
+  "name": "litmail-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "test:a11y": "playwright test tests/a11y.spec.ts",
+    "test:landing": "playwright test tests/landing.spec.ts",
+    "test:signup": "playwright test tests/signup.spec.ts",
+    "test:pricing": "playwright test tests/pricing.spec.ts",
+    "test:report": "playwright show-report",
+    "test": "playwright test --reporter=html,json"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.2.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0",
+    "@playwright/test": "^1.40.0",
+    "axe-playwright": "^1.2.0",
+    "@axe-core/playwright": "^4.8.0",
+    "@next/bundle-analyzer": "^14.0.0"
+  }
+}
